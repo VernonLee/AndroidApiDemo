@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entitries_list_all">
+        <item>TextView</item>
+    </string-array>
+    
+    <string-array name="entitries_list_textview">
+        <item>跑马灯</item>
+        <item>Drawable TextView</item>
+    </string-array>
+</resources>

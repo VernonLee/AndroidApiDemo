@@ -1,4 +1,4 @@
-package com.vernon.lee;
+package com.vernon.lee.communication;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,36 +9,41 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-import com.vernon.lee.communication.CommunicationActivity;
-import com.vernon.lee.textview.TextViewActivity;
+import com.vernon.lee.R;
+import com.vernon.lee.utils.ToastUtil;
 
-public class MainActivity extends Activity {
+/**
+ * android常用通信处理
+ * @since 2014-10-10
+ * @author huailiang
+ */
+public class CommunicationActivity extends Activity {
 	private ListView mListView;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_communication);
 		initViews();
 	}
-	
+
 	private void initViews() {
-		mListView = (ListView) findViewById(R.id.lv_all);
+		mListView = (ListView) findViewById(R.id.lv_communication);
 		mListView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
+				ToastUtil.show(getApplicationContext(), position);
+				
 				Class<?> cls = null;
-				switch (position) {
+				switch(position) {
 				case 0:
-					cls = TextViewActivity.class;
+					cls = ActivityAndBroadCastReceiverActivity.class;
 					break;
-				case 1:
-					cls = CommunicationActivity.class;
 				}
-
-				if (cls != null) {
-					startActivity(new Intent(MainActivity.this, cls));
+				
+				if(cls != null) {
+					startActivity(new Intent(CommunicationActivity.this, cls));
 				}
 			}
 		});
@@ -49,4 +54,5 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+
 }

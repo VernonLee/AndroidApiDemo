@@ -27,6 +27,11 @@
         <activity android:name=".textview.MarqueenActivity" />
         <activity android:name=".textview.DrawableTextActivity" />
         
+        <activity android:name=".communication.CommunicationActivity" />
+        <activity android:name=".communication.ActivityAndBroadCastReceiverActivity" />
+        
+        <receiver android:name=".communication.BroadcastReceiverOne" />
+        
     </application>
 
 </manifest>

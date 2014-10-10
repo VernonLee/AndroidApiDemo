@@ -25,4 +25,10 @@ public class MarqueenActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.textview_marqueen);
 	}
+	
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		finish();
+	}
 }

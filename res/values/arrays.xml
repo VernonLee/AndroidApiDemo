@@ -2,10 +2,24 @@
 <resources>
     <string-array name="entitries_list_all">
         <item>TextView</item>
+        <item>Communication</item>
+        <item>Custom shape</item>
     </string-array>
     
     <string-array name="entitries_list_textview">
         <item>跑马灯</item>
         <item>Drawable TextView</item>
+    </string-array>
+    
+    <string-array name="entitries_list_communicate">
+        <item>Between Activity and BroadcastReveiver</item>
+        <item>From Activity to Activity</item>
+    </string-array>
+    
+    <string-array name="entitries_list_cusshape">
+        <item>circle(圆)</item>
+        <item>Ellipse(椭圆)</item>
+        <item>Rectangular(矩形)</item>
+        <item>Square(正方形)</item>
     </string-array>
 </resources>

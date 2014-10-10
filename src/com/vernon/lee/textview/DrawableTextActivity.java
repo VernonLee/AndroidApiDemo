@@ -18,7 +18,13 @@ public class DrawableTextActivity extends Activity implements OnClickListener{
 		setContentView(R.layout.textview_drawable_left);
 		tvDrawable = (TextView)findViewById(R.id.txt_drawable);
 	}
-
+	
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		finish();
+	}
+	
 	@Override
 	public void onClick(View v) {
 		Drawable dra = getResources().getDrawable(

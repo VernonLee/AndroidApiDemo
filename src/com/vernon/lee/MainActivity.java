@@ -9,7 +9,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
+
 import com.vernon.lee.communication.CommunicationActivity;
+import com.vernon.lee.graphics.GraphicsActivity;
 import com.vernon.lee.textview.TextViewActivity;
 
 public class MainActivity extends Activity {
@@ -35,6 +37,8 @@ public class MainActivity extends Activity {
 					break;
 				case 1:
 					cls = CommunicationActivity.class;
+				case 3:
+					cls = GraphicsActivity.class;
 				}
 
 				if (cls != null) {

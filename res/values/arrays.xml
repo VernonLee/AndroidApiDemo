@@ -4,6 +4,7 @@
         <item>TextView</item>
         <item>Communication</item>
         <item>Custom shape</item>
+        <item>Graphics</item>
     </string-array>
     
     <string-array name="entitries_list_textview">
@@ -21,5 +22,9 @@
         <item>Ellipse(椭圆)</item>
         <item>Rectangular(矩形)</item>
         <item>Square(正方形)</item>
+    </string-array>
+    
+    <string-array name="entitries_list_graphics">
+        <item>Canvas</item>
     </string-array>
 </resources>

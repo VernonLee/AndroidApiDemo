@@ -5,11 +5,7 @@
         <item>Communication</item>
         <item>Custom shape</item>
         <item>Graphics</item>
-    </string-array>
-    
-    <string-array name="entitries_list_textview">
-        <item>跑马灯</item>
-        <item>Drawable TextView</item>
+        <item>System</item>
     </string-array>
     
     <string-array name="entitries_list_communicate">
@@ -26,5 +22,9 @@
     
     <string-array name="entitries_list_graphics">
         <item>Canvas</item>
+    </string-array>
+    
+    <string-array name="entitries_list_system">
+        <item>View绘制流程</item>
     </string-array>
 </resources>

@@ -37,8 +37,10 @@ public class MainActivity extends Activity {
 					break;
 				case 1:
 					cls = CommunicationActivity.class;
+					break;
 				case 3:
 					cls = GraphicsActivity.class;
+					break;
 				}
 
 				if (cls != null) {

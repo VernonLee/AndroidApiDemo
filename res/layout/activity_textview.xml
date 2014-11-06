@@ -4,10 +4,100 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-    <ListView 
-        android:id="@+id/lv_textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/entitries_list_textview"/>
+<!-- 跑马灯 -->
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="跑马灯"
+    android:textSize="18sp"
+    android:padding="10dp"
+    android:textColor="@color/white_opaticy"
+    android:background="@color/subtitle_bg"/>
 
+<TextView 
+	    android:text="@string/textview_marqueen"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:singleLine="true"
+	    android:ellipsize="marquee"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:marqueeRepeatLimit="marquee_forever"
+	    android:scrollHorizontally="true"/>
+
+<!-- Drawable TextView -->
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Drawable TextView"
+    android:textSize="18sp"
+    android:padding="10dp"
+    android:layout_marginTop="30dp"
+    android:textColor="@color/white_opaticy"
+    android:background="@color/subtitle_bg"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	<TextView 
+	    android:id="@+id/txt_drawable"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="电量"
+	    android:gravity="center"
+	    android:drawableLeft="@drawable/setting_icon_battery_64"
+	    
+	   />
+	<Button 
+	    android:id="@+id/btn_drawable_change"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="改变"
+	    android:onClick="onClick"/>
+</LinearLayout>
+
+<!-- 加边框的TextView -->
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="加边框的TextView"
+    android:textSize="18sp"
+    android:padding="10dp"
+    android:layout_marginTop="30dp"
+    android:textColor="@color/white_opaticy"
+    android:background="@color/subtitle_bg"/>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="测试文字(边框单位：px)"
+	    android:textSize="18sp"
+	    android:padding="20dp"
+	    android:layout_margin="5dp"
+	    android:background="@drawable/textview_bg_px"
+	    android:textColor="@color/subtitle_bg"/>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="测试文字(边框单位：dp)"
+	    android:textSize="18sp"
+	    android:padding="20dp"
+	    android:layout_margin="5dp"
+	    android:background="@drawable/textview_bg_dp"
+	    android:textColor="@color/subtitle_bg"/>
+	
+		<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="说明：如果想要使边框更细，直接使用px，\n dp = px*destiny; destiny:为手机像素密度"
+	    android:textSize="14sp"
+	    android:textColor="@color/subtitle_bg"/>
+</LinearLayout>
 </LinearLayout>

@@ -40,9 +40,10 @@ public final class R {
         public static final int textview_bg_px=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0006;
+        public static final int action_settings=0x7f0a0007;
         public static final int btn_drawable_change=0x7f0a0004;
-        public static final int btn_send_broadcast=0x7f0a0005;
+        public static final int btn_drawable_hide=0x7f0a0005;
+        public static final int btn_send_broadcast=0x7f0a0006;
         public static final int lv_all=0x7f0a0002;
         public static final int lv_communication=0x7f0a0000;
         public static final int lv_graphics=0x7f0a0001;

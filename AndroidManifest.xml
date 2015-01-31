@@ -22,19 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".textview.TextViewActivity" />
-        <activity android:name=".textview.MarqueenActivity" />
-        <activity android:name=".textview.DrawableTextActivity" />
-        
-        <activity android:name=".communication.CommunicationActivity" />
-        <activity android:name=".communication.ActivityAndBroadCastReceiverActivity" />
-        
-        <activity android:name=".graphics.GraphicsActivity" />
-        <activity android:name=".graphics.CanvasActivity" />
-        
-        <receiver android:name=".communication.BroadcastReceiverOne" />
-        
+        <activity
+            android:name=".FeatureListActivity"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

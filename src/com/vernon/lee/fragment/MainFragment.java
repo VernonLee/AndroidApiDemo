@@ -3,7 +3,6 @@ package com.vernon.lee.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,11 +13,12 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.vernon.lee.FeatureListActivity;
 import com.vernon.lee.R;
 import com.vernon.lee.utils.FeatureData;
 
 public class MainFragment extends Fragment {
-	private static final String TAG = "MainFragment";
+	public static final String EXTRA_FEATURE_NAME = "feature_name";
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,11 +40,9 @@ public class MainFragment extends Fragment {
 					long id) {
 				TextView textView = (TextView) view;
 				String text = textView.getText().toString();
-				Class<?> cls = FeatureData.getClassByName(text);
-				if(cls != null) {
-					Log.i(TAG, cls.toString() + "被点击了");
-					getActivity().startActivity(new Intent(getActivity(), cls));
-				}
+				Intent i = new Intent(getActivity(), FeatureListActivity.class);
+				i.putExtra(EXTRA_FEATURE_NAME, text);
+				startActivity(i);
 			}
 		});
 		

@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.vernon.lee.fragment.MainFragment;
+import com.vernon.lee.fragment.FeatureMainFragment;
 import com.vernon.lee.utils.FeatureUtils;
 
 public class FeatureListActivity extends SingleFragmentActivity {
@@ -16,7 +16,7 @@ public class FeatureListActivity extends SingleFragmentActivity {
 	protected Fragment createFragment() {
 		Intent i = getIntent();
 		if(i != null) {
-			mFeatureName = i.getStringExtra(MainFragment.EXTRA_FEATURE_NAME);
+			mFeatureName = i.getStringExtra(FeatureMainFragment.EXTRA_FEATURE_NAME);
 		}
 		
 		if(TextUtils.isEmpty(mFeatureName)) {

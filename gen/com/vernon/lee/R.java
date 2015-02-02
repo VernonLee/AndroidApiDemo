@@ -9,6 +9,14 @@ package com.vernon.lee;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int trimLength=0x7f010000;
     }
     public static final class color {
         public static final int subtitle_bg=0x7f040000;
@@ -28,20 +36,29 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int logo=0x7f020001;
-        public static final int setting_icon_battery_64=0x7f020002;
-        public static final int setting_icon_bluetooth_64=0x7f020003;
+        public static final int ic_line=0x7f020001;
+        public static final int logo=0x7f020002;
+        public static final int shape_border=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f090002;
+        public static final int action_settings=0x7f09000a;
+        public static final int btn_add=0x7f090001;
         public static final int fragment_container=0x7f090000;
-        public static final int grid_frag_main_features=0x7f090001;
+        public static final int grid_frag_main_features=0x7f090003;
+        public static final int txt_drawable_text_feature=0x7f090008;
+        public static final int txt_drawable_text_note=0x7f090009;
+        public static final int txt_drawable_texttitle=0x7f090007;
+        public static final int txt_marquee_feature=0x7f090005;
+        public static final int txt_marquee_note=0x7f090006;
+        public static final int txt_marquee_title=0x7f090004;
+        public static final int txt_null=0x7f090002;
     }
     public static final class layout {
         public static final int activity_single_fragment=0x7f030000;
         public static final int empty_view=0x7f030001;
         public static final int frag_main=0x7f030002;
-        public static final int grid_item_feature=0x7f030003;
+        public static final int fragment_feature_textview=0x7f030003;
+        public static final int grid_item_feature=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -49,8 +66,14 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
+        public static final int content_marquee=0x7f060005;
+        public static final int context_drawable_text=0x7f060007;
         public static final int hello_world=0x7f060002;
-        public static final int textview_marqueen=0x7f060003;
+        public static final int subtitle_marquee=0x7f060004;
+        public static final int title_drawable_text=0x7f060006;
+        /**  TextView 
+         */
+        public static final int title_marquee=0x7f060003;
     }
     public static final class style {
         /** 
@@ -80,4 +103,33 @@ public final class R {
          */
         public static final int AppTheme=0x7f070001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a ExpandableTextView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ExpandableTextView_trimLength com.vernon.lee:trimLength}</code></td><td></td></tr>
+           </table>
+           @see #ExpandableTextView_trimLength
+         */
+        public static final int[] ExpandableTextView = {
+            0x7f010000
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.vernon.lee.R.attr#trimLength}
+          attribute's value can be found in the {@link #ExpandableTextView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.vernon.lee:trimLength
+        */
+        public static final int ExpandableTextView_trimLength = 0;
+    };
 }

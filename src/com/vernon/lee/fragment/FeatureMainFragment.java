@@ -17,7 +17,7 @@ import com.vernon.lee.FeatureListActivity;
 import com.vernon.lee.R;
 import com.vernon.lee.utils.FeatureData;
 
-public class MainFragment extends Fragment {
+public class FeatureMainFragment extends Fragment {
 	public static final String EXTRA_FEATURE_NAME = "feature_name";
 	
 	@Override

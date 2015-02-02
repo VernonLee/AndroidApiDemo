@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.vernon.lee.FeatureActivity;
 
 public class FeatureListFragment extends ListFragment {
-	private static final String EXTRA_FEATURE_DETAIL_NAME = "detail_name";
+	public static final String EXTRA_FEATURE_DETAIL_NAME = "detail_name";
 
 	@TargetApi(11)
 	@Override

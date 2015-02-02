@@ -3,6 +3,7 @@
     <issue id="HardcodedText">
         <ignore path="res/layout/activity_textview.xml" />
         <ignore path="res/layout/comm_activity_to_broadcastreceiver.xml" />
+        <ignore path="res/layout/fragment_feature_textview.xml" />
         <ignore path="res/layout/textview_drawable_left.xml" />
     </issue>
 </lint>

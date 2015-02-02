@@ -5,9 +5,20 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 
-    <string name="textview_marqueen">
-        			有一阵子，我约莫十点左右就会爬到床上。我关掉房间的灯，只留下床头的台灯亮着。
-        在躺下来后我会从床头抽出一本书来看，但往往没看多久我的内心就开始烦躁起来，完全没办
-        法进入到书本的内容里边去。我把书合上，把台灯关了，蒙上双眼试图使得自己进入睡眠状态。
-        我努力的说服自己睡去，时间过去好久，我脑海依旧异常的清醒。</string>
+    <!-- TextView -->
+    <string name="title_marquee">跑马灯</string>
+    <string name="subtitle_marquee">有一阵子，我约莫十点左右就会爬到床上。我关掉房间的灯，只留下床头的台灯亮着。
+        在躺下来后我会从床头抽出一本书来看，但往往没看多久我的内心就开始烦躁起来，完全没办 法进入到书本的内容里边去。
+        ---摘自《简书》</string>
+    <string name="content_marquee">当文字部分超出视图区域宽度，需要对文字进行截取或省略显示，除了上述两种处理之外，
+        还有一种处理方式-文字滚动显示。具体处理过程为：首先文字必须是单行SingleLine="true", ellipsize="marquee", 考虑到文字显
+        示区域无焦点的情况下不会滚动，设置focusable="true"和focusableInTouchMode="true"自动获取焦点可避免此类现象，
+        最后，设置marqueeRepeatLimit(参数为整数，如5, 10)循环滚动次数，marquee_forever(值 ：-1)表示不停止。</string>
+        
+    <string name="title_drawable_text">Drawable Text</string>
+    <string name="context_drawable_text">Drawable Text是TextView自带的一种属性，显示的方向包含上、下、左、右。分别
+        对应drawableTop, drawableBottom, drawableLeft, drawableRight，直接设置资源图片即可，除了显示之外，还可以对它进
+        行一些操作，比如隐藏一个方向的，然后显示另外一个方向的等等，具体的方法为setCompoundDrawablesWithIntrinsicBounds 
+        (int left, int top, int right, int bottom)，参数为四个方向的值，类型为Drawable, 值等于0表示隐藏该方向的图片。</string>
+    
 </resources>

@@ -21,4 +21,12 @@
         行一些操作，比如隐藏一个方向的，然后显示另外一个方向的等等，具体的方法为setCompoundDrawablesWithIntrinsicBounds 
         (int left, int top, int right, int bottom)，参数为四个方向的值，类型为Drawable, 值等于0表示隐藏该方向的图片。</string>
     
+    <!-- ListView -->
+    <string name="title_header_footer_view">Header-Footer View</string>
+    <string name="content_header_footer_view">在ListView的头部或者尾部添加一个固定的记录，HeaderView可以作为列表的标题
+        ,而FooterView可以作为列表的描述性文字。引入的时候需要注意，一定是在setAdapter之前设置，否则无效。</string>
+    
+    <string name="title_empty_view">EmptyView</string>
+    <string name="content_empty_view">当ListView中的Adapter数据为空的时候，显示该View, 这是一个很好的交互体验，也可以在
+        没有网络的时候显示View。</string>
 </resources>

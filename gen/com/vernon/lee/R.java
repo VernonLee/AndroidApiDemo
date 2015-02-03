@@ -41,24 +41,29 @@ containing a value of this type.
         public static final int shape_border=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000a;
+        public static final int action_settings=0x7f09000e;
         public static final int btn_add=0x7f090001;
         public static final int fragment_container=0x7f090000;
         public static final int grid_frag_main_features=0x7f090003;
-        public static final int txt_drawable_text_feature=0x7f090008;
-        public static final int txt_drawable_text_note=0x7f090009;
-        public static final int txt_drawable_texttitle=0x7f090007;
-        public static final int txt_marquee_feature=0x7f090005;
-        public static final int txt_marquee_note=0x7f090006;
-        public static final int txt_marquee_title=0x7f090004;
+        public static final int txt_drawable_text_feature=0x7f09000c;
+        public static final int txt_drawable_text_note=0x7f09000d;
+        public static final int txt_drawable_texttitle=0x7f09000b;
+        public static final int txt_empty_view_note=0x7f090007;
+        public static final int txt_empty_view_title=0x7f090006;
+        public static final int txt_header_footer_view_note=0x7f090005;
+        public static final int txt_header_footer_view_title=0x7f090004;
+        public static final int txt_marquee_feature=0x7f090009;
+        public static final int txt_marquee_note=0x7f09000a;
+        public static final int txt_marquee_title=0x7f090008;
         public static final int txt_null=0x7f090002;
     }
     public static final class layout {
         public static final int activity_single_fragment=0x7f030000;
         public static final int empty_view=0x7f030001;
         public static final int frag_main=0x7f030002;
-        public static final int fragment_feature_textview=0x7f030003;
-        public static final int grid_item_feature=0x7f030004;
+        public static final int fragment_widget_listview=0x7f030003;
+        public static final int fragment_widget_textview=0x7f030004;
+        public static final int grid_item_feature=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -66,11 +71,17 @@ containing a value of this type.
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
+        public static final int content_empty_view=0x7f06000b;
+        public static final int content_header_footer_view=0x7f060009;
         public static final int content_marquee=0x7f060005;
         public static final int context_drawable_text=0x7f060007;
         public static final int hello_world=0x7f060002;
         public static final int subtitle_marquee=0x7f060004;
         public static final int title_drawable_text=0x7f060006;
+        public static final int title_empty_view=0x7f06000a;
+        /**  ListView 
+         */
+        public static final int title_header_footer_view=0x7f060008;
         /**  TextView 
          */
         public static final int title_marquee=0x7f060003;

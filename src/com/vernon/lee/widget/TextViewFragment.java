@@ -18,7 +18,7 @@ public class TextViewFragment extends FeatureFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View v = inflater.inflate(R.layout.fragment_feature_textview, null);
+		View v = inflater.inflate(R.layout.fragment_widget_textview, null);
 		
 		// 跑马灯
 		ExpandableTextView marqueeTextView = (ExpandableTextView) v.findViewById(R.id.txt_marquee_note);
